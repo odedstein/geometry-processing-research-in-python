@@ -135,18 +135,18 @@ This displays:
 [Desbrun et al. 1999](http://multires.caltech.edu/pubs/ImplicitFairing.pdf)
 introduce a very simple method for denoising this surface by solving the
 following differential equation:
-$$u = u_{\operatorname{noisy}} - t \Delta u,$$
+$$u = u_{\text{noisy}} - t \Delta u,$$
 where $t$ is a parameter controlling the strength of the denoising.
 
 To get the weak for of this expression (so that we will be able to use our
 Laplacian), we multiply with an arbitrary function $v$:
-$$\int_\Omega u v \textrm{ } dx = \int_\Omega u_{\operatorname{noisy}} v \textrm{ } dx - t \int_\Omega (\Delta u) v \textrm{ } dx,$$
-$$M(u, v) = M(u_{\operatorname{noisy}}, v) - t L(u, v).$$
+$$\int_\Omega u v \textrm{ } dx = \int_\Omega u_{\text{noisy}} v \textrm{ } dx - t \int_\Omega (\Delta u) v \textrm{ } dx,$$
+$$M(u, v) = M(u_{\text{noisy}}, v) - t L(u, v).$$
 
 Written out with discrete final element matrices $\mathbf{L}, \mathbf{M}$ and
-discrete functions $\mathbf{u}$, $\mathbf{u}_{\operatorname{noisy}}$, this
+discrete functions $\mathbf{u}$, $\mathbf{u}_{\text{noisy}}$, this
 becomes the matrix equation
-$$\left( \mathbf{M} + t \mathbf{L} \right) \mathbf{u} = \mathbf{M) \mathbf{u}_{\operatorname{noisy}}.$$
+$$\left( \mathbf{M} + t \mathbf{L} \right) \mathbf{u} = \mathbf{M) \mathbf{u}_{\text{noisy}}.$$
 
 We can solve this simple linear equation using SciPy's sparse linear solvers:
 ```python
