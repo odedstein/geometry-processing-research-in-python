@@ -50,6 +50,27 @@ The full list of exercises is:
 
 Have fun!
 
+## FAQ
+
+### What is the difference between Gpytoolbox and libigl?
+
+This question was asked during the SGP course, so I want to answer it explicitly
+here.
+
+Both [Gpytoolbox](https://gpytoolbox.org) and [libigl](https://libigl.github.io)
+are geometry processing libraries with Python interfaces.
+Libigl is a more extensive and more established geometry processing library with
+a `C++` core and Python bindings to that `C++` code.
+You should use libigl, it is great!
+In fact, quite a few Gpytoolbox functions are based on libigl functions or wrap
+libigl in some way.
+
+Gpytoolbox is a smaller library with functions mostly written in Python that is
+great for research code specifically.
+It is geared towards geometry processing researchers, is easy to use, with
+well-documented code that is ready for you to use in your projects immediately.
+
+
 ## Citation
 
 If you want to cite this course, use the following BibTeX:
