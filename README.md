@@ -90,7 +90,7 @@ The entire graphics community owes great thanks to
 [Nick Sharp](https://nmwsharp.com), the creator of Polyscope, for his useful
 software and extremely friendly support.
 
-Thanks to Daniella Levy for debugging the exercises.
+Thanks to Daniella Levy and Zoë Marschner for debugging the exercises.
 
 ## License
 

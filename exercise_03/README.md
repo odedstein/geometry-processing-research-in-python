@@ -84,9 +84,9 @@ ps.show()
 ```
 This displays:
 
-![A wingnut structure in Polyscope](images/wingnut_show.png)
+![A penguin and wingnut structure in Polyscope](images/penguin_wingnut_show.png)
 
-By default, all surfaces are shorn.
+By default, all surfaces are shown.
 You can explicitly decide to show or hide a surface by clicking the
 "enabled" checkbox
 in the Polyscope GUI, by creating the structure with the option `enabled=True`
@@ -96,15 +96,15 @@ or by calling `set_enabled(True)` (or `set_enabled(False)`) after creating it.
 import gpytoolbox as gpy, polyscope as ps
 ps.init()
 V,F = gpy.read_mesh("data/penguin.obj")
-ps_penguin = ps.register_surface_mesh("penguin", V, F, enabled=True)
+ps_penguin = ps.register_surface_mesh("penguin", V, F, enabled=False)
 V,F = gpy.read_mesh("data/wingnut.obj")
-ps_wingnut = ps.register_surface_mesh("wingnut", V, F, enabled=False)
-ps_wingnut.set_enabled(True)
+ps_wingnut = ps.register_surface_mesh("wingnut", V, F, enabled=True)
+ps_wingnut.set_enabled(True) #the same as enabled=True
 ps.show()
 ```
 This displays:
 
-![A penguin and wingnut structure in Polyscope](images/penguin_wingnut_show.png)
+![A wingnut structure in Polyscope](images/wingnut_show.png)
 
 Structures are removed from the Polyscope scene with the `remove()`
 function.
