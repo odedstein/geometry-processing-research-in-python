@@ -65,7 +65,8 @@ different.
 MATLAB and matplotlib do not block the interpreter while the window is launched,
 but in Polyscope you cannot issue Python commands while the window is active.
 It is possible to return control to Python while the Polyscope window is still
-active, but requires advanced functionality._
+active, but requires more advanced functionality.
+Ugo Finnendahl [has written a Python patch for Polyscope](https://github.com/ugogon/interactive_polyscope) that allows Polyscope to run asynchronously in a Jupyter Norebook._
 
 ### Structure management
 
