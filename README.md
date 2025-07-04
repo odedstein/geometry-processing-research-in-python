@@ -18,7 +18,9 @@ tasks, and how to write your own methods on the basis of Gpytoolbox methods.
 *This tutorial will give you the tools to write your own methods.*
 
 This tutorial accompanies an [SGP 2024 graduate school](https://sgp2024.github.io/program/) course.
-As soon as the recording for the course is available, I will link it here.
+Click on the image below to see the lecture.
+
+[![SGP course recording](https://img.youtube.com/vi/wQU9H4lp21k/0.jpg)](https://www.youtube.com/watch?v=wQU9H4lp21k)
 
 ## How this tutorial works
 
